@@ -28,13 +28,13 @@ filterate计算iou筛选得到列表，Prev、Next前后载入疑似重框标注
 
 ## 使用
 (1).default.yaml自动生成<br/>
-(2).自动标注使用前确认**参数**<br/>
-&emsp;parameter_settings：含conf、iou、classes参数<br/>
-&emsp;model_selection：支持yolov8n、yolov8s、yolov8m、yolov8l、yolov8x<br/>
-&emsp;"./tools/change_labels.py"修改检测类别序号(coco --> 当前任务)<br/>
-&emsp;&emsp;def rework_classes(default=False):禁用修改<br/>
-&emsp;&emsp;def replace(line):按任务及使用情况灵活修改，默认2,5,7 --> 2。<br/>
-(3).重框筛选使用前确认**参数**<br/>
+(2).自动标注使用前**确认参数**<br/>
+&emsp;- parameter_settings：含conf、iou、classes参数<br/>
+&emsp;- model_selection：支持yolov8n、yolov8s、yolov8m、yolov8l、yolov8x<br/>
+&emsp;- "./tools/change_labels.py"修改检测类别序号(coco --> 当前任务)<br/>
+&emsp;&emsp;- def rework_classes(default=False):禁用修改<br/>
+&emsp;&emsp;- def replace(line):按任务及使用情况灵活修改，默认2,5,7 --> 2。<br/>
+(3).重框筛选使用前**确认参数**<br/>
 &emsp;filter_conf、check_ls两个参数，在default.yaml中修改<br/>
 
 ## Installation
