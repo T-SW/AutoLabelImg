@@ -1,0 +1,9 @@
+# Usage: pip install -r requirements.txt
+
+requests
+opencv-python
+psutil
+tqdm
+matplotlib
+pyyaml
+pandas
